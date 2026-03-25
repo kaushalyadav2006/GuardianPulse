@@ -50,16 +50,6 @@ Many hackathon projects demonstrate isolated features. GuardianPulse demonstrate
 - Live transparency: timer + timeline + map in one console
 - Simulation-first architecture that can be integrated with real providers later
 
-### Why this matters to judges
-
-It shows product thinking, not only coding.
-
-The project answers:
-
-- What happens first?
-- What happens next if no one responds?
-- How does the system fail safely?
-- How is trust maintained through visibility?
 
 ## 4. Product Story: What Happens During a Session
 
@@ -220,64 +210,7 @@ GuardianPulse can evolve into multiple safety categories:
 
 In all these, speed and sequence are the value, not only alert delivery.
 
-## 12. How to Present This in a Hackathon
-
-### 20-second opening
-
-GuardianPulse is an emergency escalation engine. Instead of only sending one alert, it executes a timed response chain with family context sharing, hospital escalation, and emergency fallback.
-
-### 60-second demo flow
-
-- Press PUSH
-- Show timer starts
-- Show timeline events appearing in order
-- Show map with nearby hospitals
-- Mention 30-second hospital outreach and 60-second 102 fallback
-- Press PULL to show safe cancellation and system-wide safe notification
-
-### 20-second close
-
-This project proves a practical and explainable escalation model that can later be wired to real providers without changing user workflow.
-
-## 13. Likely Judge Questions and Strong Answers
-
-### Q: Is this production ready?
-
-Answer: Not yet. It is deliberately simulation-first to validate critical escalation logic before integrating real providers and compliance controls.
-
-### Q: Why is this better than a normal panic app?
-
-Answer: Normal panic apps usually stop at one notification. GuardianPulse continues orchestrating actions over time and provides transparent state updates.
-
-### Q: What if it is a false alarm?
-
-Answer: Pull immediately stops escalation and notifies all parties that the user is safe.
-
-### Q: Why should this win?
-
-Answer: It demonstrates complete system thinking: trigger, sequence, fallback, cancellation, and visibility in one coherent workflow.
-
-## 14. Roadmap to Production
-
-Phase 1
-
-- Move secrets to environment variables
-- Add provider adapters for SMS, email, and voice
-- Introduce persistent storage for simulation/event history
-
-Phase 2
-
-- Real geospatial hospital search and routing ETAs
-- Retry policies and delivery acknowledgments
-- Role-based dashboard views
-
-Phase 3
-
-- Compliance features (audit logs, encryption, retention policy)
-- Multi-language communication templates
-- ML-assisted anomaly confidence scoring
-
-## 15. Final Narrative
+## 12. Final Narrative
 
 GuardianPulse is not just a panic button demo.
 
