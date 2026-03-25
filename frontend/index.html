@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GuardianPulse Simulation Console</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>GuardianPulse Escalation Simulator</h1>
+        <p class="subtitle">Live safety workflow: alert, family media updates, hospital escalation, and emergency fallback.</p>
+      </div>
+      <div class="topbar-right">
+        <span id="timerBadge" class="pill timer">00:00</span>
+        <span id="apiStatus" class="pill">Checking API...</span>
+      </div>
+    </header>
+
+    <section class="control-panel panel">
+      <p id="simStateText" class="sim-state-text">System idle. Press PUSH to start simulation.</p>
+      <button id="controlButton" class="panic-button" type="button">PUSH</button>
+      <p class="hint">Press PUSH to trigger emergency simulation. Press PULL to mark user safe and stop escalation.</p>
+
+      <div class="plan-strip" aria-label="Escalation Plan">
+        <span>T+5s Alerts</span>
+        <span>T+10s Photo</span>
+        <span>T+15s Audio</span>
+        <span>T+20s Video</span>
+        <span>T+30s Hospital Call</span>
+        <span>T+60s 102 Escalation</span>
+      </div>
+    </section>
+
+    <section class="grid-two">
+      <section class="panel">
+        <h2>Nearby Hospitals Map</h2>
+        <div id="hospitalMap" class="map"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Simulation Timeline</h2>
+        <div id="timelineList" class="timeline-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="app.js"></script>
+</body>
+</html>
