@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8010";
+const API_BASE = "https://guardianpulse-backend.onrender.com";
 
 const apiStatus = document.getElementById("apiStatus");
 const timerBadge = document.getElementById("timerBadge");
