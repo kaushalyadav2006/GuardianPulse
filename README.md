@@ -78,7 +78,7 @@ This aligns with the requirement that teams are responsible for collecting or ge
 - **Member 1 (Leader):**  
   - Name: **Manichand Gupta**  
   - Email: `manichand.gupta.contact@gmail.com`  
-  - GitHub: *(add his profile URL here, e.g. https://github.com/<manichand-username>)*  
+  - GitHub: https://github.com/EclipseManic
 
 - **Member 2:**  
   - Name: **Kaushal Yadav**  
@@ -88,9 +88,7 @@ This aligns with the requirement that teams are responsible for collecting or ge
 - **Member 3:**  
   - Name: **Ansh Sharma**  
   - Email: `as7793557@gmail.com`  
-  - GitHub: *(add his profile URL here, e.g. https://github.com/<ansh-username>)*  
-
-> Note: Before final submission, please replace the placeholder GitHub URLs for Manichand and Ansh with their actual profile links.
+  - GitHub: N/A
 
 ---
 
