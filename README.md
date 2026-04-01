@@ -132,7 +132,16 @@ python -m pip install -r backend/requirements.txt
 ```powershell
 .\.venv\Scripts\python.exe .\run-all.py
 ```
+> ⚠️ **Note:** `run-all.py` is designed for **Windows only** (uses `.venv\Scripts\python.exe`, `netstat`, and `taskkill`). Linux/Mac users should start backend and frontend manually (see below).
 
+#### Manual start (Linux/Mac):
+```bash
+# Terminal 1 — backend
+source .venv/bin/activate
+uvicorn app:app --app-dir backend --host 127.0.0.1 --port 8010 --reload
+
+# Terminal 2 — frontend  
+python3 -m http.server 5510 --directory fronten
 Open:
 
 - Frontend: http://127.0.0.1:5510
