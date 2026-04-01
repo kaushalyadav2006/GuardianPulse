@@ -180,5 +180,11 @@ controlButton.addEventListener("click", async () => {
 (async () => {
   await ensureMap();
   await refreshAll();
-  setInterval(refreshAll, 1000);
+  setInterval(async () => {
+    try {
+      await refreshAll();
+    } catch (err) {
+      apiStatus.textContent = "API Offline";
+    }
+  }, 1000);
 })();
